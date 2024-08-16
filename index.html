@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat Bot Interface</title>
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="chat-container">
+      <div class="chat-window">
+        <div class="topBox">
+          <div><a href="https://www.wicket71bd.co/" class="fa fa-globe"></a></div>
+          <span>Wicket<ss>71</ss> Super Fast Bot Chat</span>
+          <div><a href="#" id="refreshLink" class="fa fa-refresh"></a></div>
+        </div>
+        <div id="google_translate_element"></div>
+        <div class="chat-box" id="chatBox">
+          <div class="chat-message bot">
+            <p style="margin-bottom: 15px;">
+              🏏 Wicket71 এর চ্যাট বটে আপনাকে স্বাগতম। এখান থেকে আপনি আপনার প্রয়োজীয় তথ্য দ্রুত পেয়ে যাবেন। 
+            </p>
+            <p>
+              কিভাবে আপনাকে সহায়তা করতে পারি তা নিচে থেকে
+              সিলেক্ট করুন স্যার। 👇
+            </p>
+          </div>
+        </div>
+        <div class="user-input" id="userInput">
+          <label for="problemSelect">
+            <img
+              src="https://cdn.pixabay.com/animation/2022/10/27/12/59/12-59-10-594_512.gif"
+              alt="" />
+            নিচে থেকে প্রশ্ন করুন
+            <img
+              src="https://cdn.pixabay.com/animation/2022/10/27/12/59/12-59-10-594_512.gif"
+              alt=""
+          /></label>
+          <select id="problemSelect">
+            <option value="" disabled selected>প্রশ্ন করুন . . .</option>
+            <option value="1">কিভাবে এখানে খেলব ?</option>
+            <option value="2">নিবন্ধন বা রেজিস্টার কি করে করতে হয় এখানে</option>
+            <option value="3">আমি ডিপোজিট করে এখনো টাকা পায়নি</option>
+            <option value="4">উত্তোলন নিয়ে সমস্যা হচ্ছে আমার</option>
+            <option value="5">এফিলিয়েট এজেন্ট কিভাবে হব আমি ?</option>
+            <option value="6">আমি বোনাস সম্পর্কে জানতে চাই</option>
+            <option value="7">আমার পাসওয়ার্ড ভুলে গেছি</option>
+            <option value="9">অন্য কিছু সম্পর্কে জানতে চাই আমি</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement({
+          pageLanguage: 'bn',
+          includedLanguages: 'en,hi,ms',
+          layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL,
+          autoDisplay: false,
+          gaTrack: false,
+          gaId: '',
+          iconUrl: '',
+          googleAttribution: ''
+        }, 'google_translate_element');
+      };
+    
+      // Function to trigger Google Translate
+      function translatePage() {
+        var iframe = document.querySelector('.skiptranslate iframe');
+        if (iframe) {
+          iframe.contentWindow.postMessage('{"event":"setOptions","options":{"enabled":true}}', '*');
+        }
+      }
+    
+      document.addEventListener('DOMContentLoaded', function() {
+        document.getElementById('translateButton').addEventListener('click', function() {
+          translatePage();
+        });
+      });
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    
+    <script src="script/js.js"></script>
+  </body>
+</html>

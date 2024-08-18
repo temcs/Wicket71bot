@@ -38,7 +38,8 @@ body {
   padding: 10px;
   overflow-y: auto;
   flex: 1;
-  background: rgb(255, 255, 255);
+  background: url(https://64.media.tumblr.com/eddf38709b4ff8e4925de3360f603866/tumblr_pu0ndkstCx1uzwgsuo1_400.gifv);
+  background-size: cover;
 }
 
 .chat-message {
@@ -69,8 +70,8 @@ body {
   color: #000000;
   font-weight: 100;
 }
-.chat-message.bot a{
-  color :rgb(255, 2, 36);
+.chat-message.bot a {
+  color: rgb(255, 2, 36);
 }
 
 .chat-message.user p {
@@ -83,7 +84,8 @@ body {
   display: flex;
   padding: 10px;
   border-top: 1px solid #ddd;
-  background-color: #000000;
+  background: url(https://64.media.tumblr.com/0c36f0b28db57091db8cae7268eb4072/tumblr_pxeis7lXoK1uzwgsuo1_400.gifv);
+  background-size: 100% 100%;
   text-align: center;
   font-weight: 900;
   flex-direction: row;
@@ -92,20 +94,20 @@ body {
   box-shadow: 2px 4px 2px #474747;
 }
 
-.topBox a{
+.topBox a {
   color: rgb(255, 112, 112);
   text-decoration: none;
   cursor: pointer;
   padding: 5px;
   font-size: 20px;
 }
-.topBox ss{
+.topBox ss {
   color: rgb(255, 136, 0);
   text-decoration: none;
   cursor: pointer;
   font-size: 20px;
 }
-.topBox zz{
+.topBox zz {
   color: rgb(18, 192, 12);
   text-decoration: none;
   cursor: pointer;
@@ -134,13 +136,14 @@ body {
 .rotate {
   animation: rotate 0.5s linear;
 }
-#google_translate_element{
+#google_translate_element {
   background: rgb(0, 0, 0);
 }
 .user-input {
   padding: 10px;
   border-top: 1px solid #ddd;
-  background: #000000;
+  background: url(https://64.media.tumblr.com/0c36f0b28db57091db8cae7268eb4072/tumblr_pxeis7lXoK1uzwgsuo1_400.gifv);
+  background-size: 100% 100%;
   color: white;
 }
 .user-input img {
@@ -157,10 +160,17 @@ select {
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 4px;
-  background: rgb(56, 56, 56);
+  background: url(https://64.media.tumblr.com/eddf38709b4ff8e4925de3360f603866/tumblr_pu0ndkstCx1uzwgsuo1_400.gifv);
+  background-size: 100% 100%;
   color: white;
 }
-
+option{
+  background: rgb(46, 46, 46);
+}
+/* Add style for Main Menu option */
+#dynamicSelect option[value="main"] {
+  background-color: #6b0000; /* Change this color as needed */
+}
 
 /* Typing effect container */
 .typing-indicator {
@@ -199,79 +209,3 @@ select {
   }
 }
 
-/* js multi question 
-
-
-        '3': {
-            question: 'নিচে থেকে সিলেক্ট করুন আপনার কোন সমস্যাটি হচ্ছে 👇',
-            options: {
-                '1': 'আমি অনেক্ষণ আগে উত্তোলন করেছি এখনো টাকা আসেনি।',
-                '2': 'উত্তোলন কিভাবে করতে হয় আমি জানি না , আমাকে একটা ভিডিও দিন উত্তোলনের।',
-                '3': 'উত্তোলন দিয়েছি কিন্তু বাতিল হয়ে যাচ্ছে কেন?'
-            },
-            followUps: {
-                '1': {
-                    question: 'For Bank A, please select an option:',
-                    options: {
-                        '1': 'Add a savings account',
-                        '2': 'Add a checking account'
-                    },
-                    answers: {
-                        '1': 'To add a savings account with Bank A, go to "Account Settings" and select "Add Savings Account". Follow the on-screen instructions.',
-                        '2': 'To add a checking account with Bank A, visit "Bank Accounts" and click "Add Checking Account". Enter the required details.'
-                    }
-                },
-                '2': {
-                    question: 'For Bank B, please select an option:',
-                    options: {
-                        '1': 'Add a business account',
-                        '2': 'Add a personal account'
-                    },
-                    answers: {
-                        '1': 'To add a business account with Bank B, navigate to "Business Accounts" and select "Add Business Account". Provide the necessary information.',
-                        '2': 'To add a personal account with Bank B, go to "Personal Accounts" and click "Add Personal Account". Follow the prompts.'
-                    }
-                },
-                '3': {
-                    question: 'For Bank C, please select an option:',
-                    options: {
-                        '1': 'Add a joint account',
-                        '2': 'Add a retirement account'
-                    },
-                    answers: {
-                        '1': 'To add a joint account with Bank C, go to "Account Types" and choose "Add Joint Account". Enter details for both account holders.',
-                        '2': 'To add a retirement account with Bank C, visit "Retirement Accounts" and select "Add Retirement Account". Follow the instructions.'
-                    }
-                }
-            }
-        },
-
-
-
-
-
-
-
-
-
-
-
-            6: {
-      question: "To check the current weather, please select your country:",
-      options: {
-        1: "United States",
-        2: "Canada",
-        3: "United Kingdom",
-        4: "Australia",
-        5: "India",
-      },
-      answers: {
-        1: "To get the current weather in the United States, please visit your preferred weather service or app.",
-        2: "To get the current weather in Canada, please visit your preferred weather service or app.",
-        3: "To get the current weather in the United Kingdom, please visit your preferred weather service or app.",
-        4: "To get the current weather in Australia, please visit your preferred weather service or app.",
-        5: "To get the current weather in India, please visit your preferred weather service or app.",
-      },
-    },
-        
-        */

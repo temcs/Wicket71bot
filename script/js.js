@@ -171,7 +171,7 @@ Wicket71 অনলাইন গেমে আপনারা বেটিং ক�
     const select = document.createElement("select");
     select.id = "dynamicSelect";
     select.innerHTML =
-      '<option value="" disabled selected>Choose an option</option>';
+      '<option value="" disabled selected>অনুগ্রহ করে বাছুন</option>';
     for (const [value, text] of Object.entries(options)) {
       // Set background color for the "Main Menu" option
       const option = document.createElement("option");

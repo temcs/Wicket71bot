@@ -13,7 +13,7 @@ body {
 
 .chat-container {
   width: 100%;
-  max-width: 650px;
+  max-width: 500px;
   margin: 0 auto;
   background: #2f2f2f;
 }
@@ -38,7 +38,7 @@ body {
   padding: 10px;
   overflow-y: auto;
   flex: 1;
-  background: url(https://64.media.tumblr.com/eddf38709b4ff8e4925de3360f603866/tumblr_pu0ndkstCx1uzwgsuo1_400.gifv);
+  background: url(https://64.media.tumblr.com/20c4a41f0b816fa26bb3454948c77cfe/ec4ef65bc41375ef-40/s400x600/e383f6397b494da2c0ae9e9f8576f7cc28938e78.gif);
   background-size: cover;
 }
 
@@ -66,8 +66,8 @@ body {
 }
 
 .chat-message.bot p {
-  background-color: #b7fdb4;
-  color: #000000;
+  background-color: #ffffff;
+  color: #2e2929;
   font-weight: 100;
 }
 .chat-message.bot a {
@@ -75,7 +75,7 @@ body {
 }
 
 .chat-message.user p {
-  background-color: #003977;
+  background-color: #37474F;
   color: #fff;
   font-weight: 100;
 }
@@ -84,7 +84,7 @@ body {
   display: flex;
   padding: 10px;
   border-top: 1px solid #ddd;
-  background: url(https://64.media.tumblr.com/0c36f0b28db57091db8cae7268eb4072/tumblr_pxeis7lXoK1uzwgsuo1_400.gifv);
+  background: black;
   background-size: 100% 100%;
   text-align: center;
   font-weight: 900;
@@ -95,20 +95,20 @@ body {
 }
 
 .topBox a {
-  color: rgb(255, 112, 112);
+  color: rgb(255, 255, 255);
   text-decoration: none;
   cursor: pointer;
   padding: 5px;
   font-size: 20px;
 }
 .topBox ss {
-  color: rgb(255, 136, 0);
+  color: rgb(233, 107, 3);
   text-decoration: none;
   cursor: pointer;
   font-size: 20px;
 }
 .topBox zz {
-  color: rgb(18, 192, 12);
+  color: rgb(64, 199, 59);
   text-decoration: none;
   cursor: pointer;
   font-size: 20px;
@@ -142,7 +142,7 @@ body {
 .user-input {
   padding: 10px;
   border-top: 1px solid #ddd;
-  background: url(https://64.media.tumblr.com/0c36f0b28db57091db8cae7268eb4072/tumblr_pxeis7lXoK1uzwgsuo1_400.gifv);
+  background: url(https://cdn.dribbble.com/users/39141/screenshots/4370017/01_copy_195.gif);
   background-size: 100% 100%;
   color: white;
 }
@@ -208,4 +208,3 @@ option{
     opacity: 1;
   }
 }
-
